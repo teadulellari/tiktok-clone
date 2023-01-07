@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import "./Video.css";
 import tiktokVideo from "./tiktok_local.mp4";
+import VideoFooter from './VideoFooter';
 function Video() {
   const [playing, setPlaying] = useState(false);
   const videoRef= useRef(null);
@@ -23,18 +24,18 @@ function Video() {
     //play it...
   }
   return (
-    <div className="Video">
+    <div className="video">
       <video
       onClick ={handleVideoPress}
       className="video_player"
       loop
       ref={ videoRef }
-      controls
        src={tiktokVideo}></video>
       {/* VideoFooter */}
+      <VideoFooter />
       {/* VideoSidebar */}
     </div>
   )
 }
 
-export default Video
+export default Video;

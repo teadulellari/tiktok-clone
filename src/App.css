@@ -9,10 +9,10 @@ html {
   place-items: center;
 }
 
-app.videos {
+.app_videos {
   position: relative;
   height: 800px;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 80%;
   max-width: 500px;
   overflow: scroll;
