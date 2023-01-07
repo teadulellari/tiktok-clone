@@ -11,6 +11,9 @@ function VideoFooter() {
             <div className="videoFooter_ticker">
                 <MusicNoteIcon 
                 className="videoFooter_icon" />
+
+
+               
             </div>
         </div>
     </div>
