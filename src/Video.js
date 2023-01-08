@@ -1,13 +1,16 @@
 import React, { useRef, useState } from 'react';
 import "./Video.css";
-import tiktokVideo from "./tiktok_local.mp4";
 import VideoFooter from './VideoFooter';
-function Video() {
+import VideoSidebar from './VideoSidebar';
+
+
+
+function Video({url, channel, description, song, likes, messages, shares }) {
   const [playing, setPlaying] = useState(false);
   const videoRef= useRef(null);
 
   const handleVideoPress = () => {
-    //if video is playing
+   
 
     if(playing) {
       videoRef.current.pause();
@@ -17,11 +20,7 @@ function Video() {
       videoRef.current.play();
       setPlaying(true);
     }
-    //stop it
-
-
-    //otherwhise if it is not playing
-    //play it...
+  
   }
   return (
     <div className="video">
@@ -30,10 +29,13 @@ function Video() {
       className="video_player"
       loop
       ref={ videoRef }
-       src={tiktokVideo}></video>
+       src={url}></video>
       {/* VideoFooter */}
-      <VideoFooter />
+      <VideoFooter  channel={channel} description={description} song={song}/>
       {/* VideoSidebar */}
+      <VideoSidebar  likes={likes} shares={shares} messages={messages}/>
+
+
     </div>
   )
 }
