@@ -13,13 +13,8 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = 9000;
 
-//middlewares
-app.use(express.json());
-app.use((req, res, next) => {
-  res.setHeaders('Accesss-Control-Allow-Origin', '*'),
-  res.setHeaders('Accesss-Control-Allow-Headers', '*'),
-  next();
-});
+const app = express();
+const port = 9000;
 
 //DB config
 
