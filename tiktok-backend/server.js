@@ -11,10 +11,17 @@ const __dirname = path.dirname(__filename);
 
 //app config
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 
-const app = express();
-const port = 9000;
+
+
+//MIDDLEWARES
+app.use(express.json());
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*"),
+  res.setHeader("Access-Control-Allow-Headers", "*"),
+  next();
+})
 
 //DB config
 
