@@ -10,4 +10,6 @@ npm run start
 
 You need to update the connection url by settling up your own connectiong using [MongoDB](https://www.mongodb.com/docs/compass/current/connect/)
 
+The current MongoDB connectionURL contains a dummy link to inform developers that the provided URL needs to be in similar format.
+
 This is one of my first full stack projects from which I improved my React and Node Js skills. I hope it will help you learn stuff as well.
