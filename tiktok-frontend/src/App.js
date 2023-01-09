@@ -9,7 +9,7 @@ function App() {
   return (
     //bem namin convention
     <div className="app">
-      <h1>Full stackvv MERN tik-tok clone </h1>
+      <h1>Full stack MERN tik-tok clone </h1>
 
       <div className="app_videos">
         <Video

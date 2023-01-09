@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /tiktok-frontend/node_modules
+/tiktok-backend/node_modules
 
 # testing
 /coverage
